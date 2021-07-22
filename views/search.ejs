@@ -15,14 +15,15 @@
           
                 <ul class="header-list">
                     <li>
-                        <a href="#" class="header-link">News Catcher</a>
+                        <a href="/" class="header-link"><i class='bx bxl-nodejs'></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-link">News Updates</a>
                     </li>
                     <li>
                         <a href="#" class="header-link">API</a>
                     </li>
-                    <li>
-                        <a href="#" class="header-link">Home</a>
-                    </li>
+
                 </ul>
             
         </header>
@@ -36,7 +37,7 @@
 
             <form action="/" method="POST">
                 <input type="text" name="search" required>
-                <input type="submit" value="search" required>
+                <button class="btn-grad">Search</button>
             </form>
          </section>
        
@@ -45,8 +46,11 @@
             <div class="news">
                <% displays.forEach(function(item, index) { %> 
                    <a href="#" class="news-card">
-                       <%- item.title %> 
-                       <img src="<%- item.image_url %>"> 
+                    <img src="<%- item.media %>">    
+                    <p><%- item.title %> </p> 
+                    <p><%- item.summary %> </p> 
+                    <p><%- item.link %> </p> 
+                       
                    </a>
                <% }) %> 
             </div>

@@ -11,8 +11,14 @@ newsRouter.get('/', async (req, res) => {
 newsRouter.post('', async (req, res) => {
   let search = req.body.search;
   try {
-    const newsAPI = await axios.get(`https://newsdata.io/api/1/news?apikey=pub_6137db87e4324aa5f2425f746c8d62af46c&q=${search}`)
-    res.render('search', { displays: newsAPI.data.results})
+    const newsAPI = await axios.get(`https://newscatcher.p.rapidapi.com/v1/search_free?q=${search}&lang=en&media=True`, {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-key": "5cf25132e5msh07ce895df09bd96p1fb02ajsn623ba5792950",
+        "x-rapidapi-host": "newscatcher.p.rapidapi.com"
+      }
+    })
+    res.render('search', { displays: newsAPI.data.articles});
   } catch (err) {
     if (err) {
       console.log(err)

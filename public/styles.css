@@ -37,7 +37,7 @@ header{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    margin-top:4rem;
+    margin-top:2rem;
 }
 .main-header{    
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -55,21 +55,14 @@ form {
     align-items: center;
 }
 input:first-child {
-    padding: .5rem .7rem;
+    padding: 1rem .7rem;
     border-radius: .8rem;
     border: none;
     outline: none;
-    width: 15%;
-}
-input:last-child {
-    padding: .5rem;
-    border: none;
-    outline: none;
-    border-radius: .8rem;
-    width: 5%;
+    width: 20%;
 }
 img{
-    width: 234px;
+    max-width: 100%;
 }
 
 .card-wrapper {
@@ -77,16 +70,46 @@ img{
 }
 .news {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    /* overflow: hidden; */
+    grid-gap: 1rem;
     
 }
 .news-card {
     list-style: none;
     text-decoration: none;
     color: #fff;
-    background-color: black;
+    background-color: #0A1931;
+    border-radius: .5rem;
 }
+.news-card:hover{
+   -webkit-box-shadow: -1px 5px 15px 5px #A3A3A3; 
+    box-shadow: -1px 5px 15px 5px #A3A3A3;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+   outline: none;
+   margin-left: -5.45rem;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
 
 footer {
     margin-top: 10rem;
@@ -108,7 +131,10 @@ footer {
     text-decoration: none;
     color: white;
     margin-right: 4rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+}
+.footer-link:hover{
+    color: #262A53;
 }
 .copy {
     color: white;
