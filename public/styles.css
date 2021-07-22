@@ -1,0 +1,115 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}
+
+header{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 3rem;
+    border-bottom: 1px solid #ced4da;
+}
+.header-list{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    list-style: none;
+    text-decoration: none;
+}
+.header-link{
+    text-decoration: none;
+    margin-right: 8rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.icons {
+    font-size:1.5rem;
+    transform: translateY(.3rem);
+}
+
+.body-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top:4rem;
+}
+.main-header{    
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:first-child {
+    padding: .5rem .7rem;
+    border-radius: .8rem;
+    border: none;
+    outline: none;
+    width: 15%;
+}
+input:last-child {
+    padding: .5rem;
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+    width: 5%;
+}
+img{
+    width: 234px;
+}
+
+.card-wrapper {
+    margin-top:2rem;
+}
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    
+}
+.news-card {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+}
+
+footer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.copyright {
+    text-align: center;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+}
+.copy {
+    color: white;
+}
