@@ -16,10 +16,10 @@
          <div class="card-wrapper">
             <div class="news">
                <% displays.forEach(function(item, index) { %> 
-                   <a href="/article/<%- item._id %> " class="news-card">
-                    <img src="<%- item.media %>">    
-                    <p><%- item.title %> </p> 
-                    <p><%- item.summary %> </p> 
+                   <a href="<%- item.link %>" class="news-card">
+                    <img src="<%- item.media %>" alt="news-image" class="news-img">    
+                    <p class="news-title">Headline: <%- item.title %> </p> 
+                    <p class="news-summary">News Summary:<%- item.summary %> </p> 
                    </a>
                <% }) %> 
             </div>
