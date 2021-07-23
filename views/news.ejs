@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>News Update | <%- title %> </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles.css" rel="stylesheet">
@@ -11,58 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-          
-                <ul class="header-list">
-                    <li>
-                        <a href="/" class="header-link"><i class='bx bxl-nodejs'></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="header-link">News Updates</a>
-                    </li>
-                    <li>
-                        <a href="https://newsdata.io/" class="header-link">API</a>
-                    </li>
-                </ul>
-            
-        </header>
-
-        
-        <section>
-            <div class="body-container">
-                 <h2 class="main-header">What is going on around the world?</h2>
-                 <p>Get the latest and archive news and blogs based on your search preference</p>
-            </div>
-
-            <form action="/" method="POST">
-                <input type="text" name="search" required>
-                 <button class="btn-grad">Search</button>
-            </form>
-         </section>
-       
-
-         
-
-       
-
-        <footer>
-           <ul class="footer-list">
-               <li class="footer-item">
-                   <a href="https://github.com/Taofiqq" class="footer-link"><i class='bx bxl-github'></i></a>
-               </li>
-               <li>
-                   <a href="https://www.linkedin.com/in/taofiq-aiyelabegan-6241a1139/" class="footer-link"><i class='bx bxl-twitter'></i></a>
-               </li>
-               <li>
-                   <a href="https://twitter.com/Taofiq__" class="footer-link"><i class='bx bxl-linkedin'></i></a>
-               </li>
-               <li>
-                   <a href="https://newsdata.io/" class="footer-link" >API</i></a>
-               </li>
-           </ul>
-            <div class="copyright">
-                <p class="copy">2021. TaofiqCodes. All right reserved.</p>
-            </div>
-        </footer>
+                 <%-  include('./partials/header.ejs') %> 
+                 <%-  include('./partials/body.ejs') %> 
+                <%-  include('./partials/footer.ejs') %> 
     </body>
 </html>
